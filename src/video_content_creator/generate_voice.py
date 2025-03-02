@@ -7,15 +7,18 @@ import os
 def ElLabs (script:str):
     load_dotenv()
     api_key = os.getenv("ELEVENLABS_API")
-    client = ElevenLabs(api_key=api_key)
-    audio = client.text_to_speech.convert(
+    client = ElevenLabs(api_key=api_key, timeout=300)
+    audio = client.generate(
         text=script,
-        voice_id="XrExE9yKIg1WjnnlVkGX",
-        model_id="eleven_multilingual_v2",
-        output_format="mp3_44100_128",
+        voice="Matilda"
     )
 
-    save(audio, "/data/voice.mp3")
+    if not os.path.exists ("./generated_files"):
+        os.mkdir ("./generated_files")
+
+    save (audio, "./generated_files/generated_audio.mp3")
+    # with open ("./generated_files/generated_audio.mp3", "w+") as f:
+    #     f.write (audio)
 
 if __name__ == "__main__":
     ElLabs(script ="The first move is what sets everything in motion.")
