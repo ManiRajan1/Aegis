@@ -1,8 +1,8 @@
-openai
-elevenlabs
+openai==1.65.2
+elevenlabs==1.52.0
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
 google-api-python-client
-runway-python
 ffmpeg-python
+python-dotenv==1.0.1

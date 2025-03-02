@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 def openAI_API(prompt:str):
 
     load_dotenv()
-    client = OpenAI(http_client = httpx.Client(verify=False))
+    #client = OpenAI(http_client = httpx.Client(verify=False))
+    client = OpenAI()
     completion = client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
