@@ -1,44 +1,377 @@
 {
-    "prompts": [
-      {
-        "title": "The Little Robot Who Wanted to Dream",
-        "prompt": "In a world where robots follow strict instructions, a tiny robot named R1X wishes to dream like humans. With the help of a curious child, R1X embarks on an adventure to discover what dreams are and whether a robot can have them too."
-      },
-      {
-        "title": "The Lost Star and the Brave Little Owl",
-        "prompt": "One night, a small star falls from the sky and lands in the forest. A brave little owl named Oliver decides to help the star find its way back home, facing many challenges along the way."
-      },
-      {
-        "title": "Luna and the Talking Paintbrush",
-        "prompt": "Luna, a young girl who loves to paint, discovers a magical paintbrush that brings her drawings to life. But when her paintings start behaving in unexpected ways, she must learn how to control the magic before it gets out of hand."
-      },
-      {
-        "title": "The Kingdom of Forgotten Colors",
-        "prompt": "A young prince wakes up one day to find that all the colors in his kingdom have disappeared. With the help of a clever fox, he sets off on a quest to bring them back and uncover the mystery behind the color thief."
-      },
-      {
-        "title": "Captain Seashell and the Treasure of Friendship",
-        "prompt": "A young pirate named Captain Seashell sets sail in search of a legendary treasure. Along the way, she learns that the greatest treasure of all might not be gold and jewels, but the friends she makes on her journey."
-      },
-      {
-        "title": "Max and the Giggle Monster",
-        "prompt": "Max, a shy boy who rarely laughs, meets a mischievous monster who can’t stop giggling. Together, they go on an adventure to find the funniest thing in the world, and along the way, Max learns how to embrace joy and laughter."
-      },
-      {
-        "title": "The Cloud Who Wanted to Dance",
-        "prompt": "Nimbus, a fluffy white cloud, dreams of dancing like the wind. But clouds are supposed to float, not dance! With the help of the wind and a few birds, Nimbus sets out to prove that even clouds can follow their dreams."
-      },
-      {
-        "title": "The Secret Library of Whispering Books",
-        "prompt": "Emma discovers a hidden library where books whisper their stories only to those who truly listen. When the library is threatened with closure, Emma must find a way to save it and share its magic with the world."
-      },
-      {
-        "title": "The Tiny Turtle Who Wanted to Fly",
-        "prompt": "Toby, a tiny turtle, watches the birds and dreams of soaring through the sky. With the help of some unexpected friends, he learns that there are many ways to fly—sometimes, even without wings."
-      },
-      {
-        "title": "The Magical Garden of Midnight Wishes",
-        "prompt": "Every night, in a secret garden, glowing flowers bloom that grant wishes to those who find them. A young girl named Elara stumbles upon the garden, but when she makes a wish, she learns that every wish comes with a lesson."
-      }
-    ]
-  }
+  "prompts": [
+    {
+      "title": "The Little Robot Who Wanted to Dream",
+      "prompt": "In a world where robots follow strict instructions, a tiny robot named R1X wishes to dream like humans. With the help of a curious child, R1X embarks on an adventure to discover what dreams are and whether a robot can have them too."
+    },
+    {
+      "title": "The Lost Star and the Brave Little Owl",
+      "prompt": "One night, a small star falls from the sky and lands in the forest. A brave little owl named Oliver decides to help the star find its way back home, facing many challenges along the way."
+    },
+    {
+      "title": "The Brave Little Fish Who Swam Against the Current",
+      "prompt": "In the deep blue ocean, a little fish named Finn decides to swim upstream despite the strong current, to find a mysterious place his grandparents once told him about. Along the way, Finn discovers his true strength and makes new friends."
+    },
+    {
+      "title": "The Adventures of Tiny the Time Traveler",
+      "prompt": "Tiny, a curious mouse, discovers an ancient time machine hidden under the floorboards of an old library. Each day, she travels to a new time period, meeting strange creatures and experiencing incredible adventures."
+    },
+    {
+      "title": "The Kindness Seeds",
+      "prompt": "A magical garden grows the most beautiful flowers, but it needs the seeds of kindness to flourish. A young girl named Lily learns that kindness can grow just like a flower, and she spreads love and good deeds all around her town."
+    },
+    {
+      "title": "The Mischievous Moonbeam",
+      "prompt": "When a mischievous moonbeam falls from the sky, it causes trouble by playing pranks on the villagers below. A brave little girl named Emma and her talking cat must team up to teach the moonbeam the importance of friendship and respect."
+    },
+    {
+      "title": "The Treasure Map of the Talking Parrot",
+      "prompt": "A parrot named Percy holds a mysterious treasure map in his beak. A group of animal friends—Benny the bear, Sally the squirrel, and Timmy the turtle—embark on a wild adventure to find the treasure and learn the true value of teamwork."
+    },
+    {
+      "title": "The Enchanted Paintbrush",
+      "prompt": "Lila discovers a magical paintbrush that can bring anything she paints to life. But when a mischievous creature escapes from one of her paintings, Lila must find a way to catch it and restore balance in her world."
+    },
+    {
+      "title": "The Little Cloud Who Wanted to Float Alone",
+      "prompt": "A small cloud named Cumulus feels different because it doesn’t want to join the other clouds in the sky. It wants to float alone and experience the world. However, Cumulus soon learns that the sky is brighter when shared with friends."
+    },
+    {
+      "title": "The Rainbow and the Brave Little Frog",
+      "prompt": "After a heavy storm, a little frog named Frodo sees a beautiful rainbow in the sky. Determined to find the end of it, Frodo goes on an exciting journey with his best friend, a curious butterfly named Bella."
+    },
+    {
+      "title": "The Secret Door in the Library",
+      "prompt": "Max and his sister Emma discover a secret door hidden in the back of the library. When they step through, they are transported to a world full of talking animals and magical creatures, where they must help solve a mystery."
+    },
+    {
+      "title": "The Lion Who Couldn’t Roar",
+      "prompt": "Leo, a young lion, is worried because he can’t roar like the other lions. With the help of his animal friends, Leo learns that his true strength doesn’t come from his roar, but from his heart."
+    },
+    {
+      "title": "The Snowman Who Wanted to Dance",
+      "prompt": "A snowman named Frosty has always dreamed of dancing like the children who build him. One magical night, he comes to life and, with the help of some friendly woodland creatures, sets off to find the perfect dance."
+    },
+    {
+      "title": "The Little Cloud Who Found Her Voice",
+      "prompt": "Cumulus, a young cloud, has always been shy and afraid to speak. When she sees a powerful storm cloud named Thunder making a loud noise, she decides to find her own voice and discovers her true power along the way."
+    },
+    {
+      "title": "The Pirate Parrot's Hidden Island",
+      "prompt": "A pirate parrot named Polly leads a group of brave animal friends on a treasure hunt to find a mysterious island. They must solve riddles, avoid traps, and work together to discover the treasure."
+    },
+    {
+      "title": "The Little Dragon Who Loved to Read",
+      "prompt": "In a world where dragons are known for breathing fire, Draco, a small dragon, has a different passion—reading books. One day, he discovers a book that tells of a lost kingdom, and with the help of his friends, Draco embarks on an adventure to find it."
+    },
+    {
+      "title": "The Little Hero Who Was Afraid of the Dark",
+      "prompt": "Lily, a young girl, is afraid of the dark. One night, she is given a magical lantern by an old woman, which illuminates the dark world and shows her the beauty that can be found in the night."
+    },
+    {
+      "title": "The Brave Little Seed",
+      "prompt": "A tiny seed named Sprout has a big dream of becoming the tallest tree in the forest. Despite many challenges, including storms and animals who want to eat him, Sprout learns that with patience and perseverance, anything is possible."
+    },
+    {
+      "title": "The Wild Adventure of the Little Bumblebee",
+      "prompt": "Buzzy, a young bumblebee, sets out on an adventure to find the rarest flower in the forest. Along the way, Buzzy encounters new friends, learns about the importance of teamwork, and discovers the beauty of nature."
+    },
+    {
+      "title": "The Forest That Lost Its Colors",
+      "prompt": "In a magical forest, all the colors begin to fade away, leaving everything gray. A group of forest animals, led by a courageous rabbit named Rosie, go on a quest to restore the colors and learn the importance of caring for their home."
+    },
+    {
+      "title": "The Little Fox and the Moon's Secret",
+      "prompt": "A curious little fox named Luna wonders why the moon only shines at night. She embarks on a journey to the moon and uncovers its long-kept secret, learning valuable lessons along the way."
+    },
+    {
+      "title": "The Brave Kitten and the Lost Key",
+      "prompt": "Mittens, a small kitten, finds an ancient golden key and sets out to discover what it unlocks. With her friends, a wise owl and a playful rabbit, she uncovers an old castle full of mysteries and adventures."
+    },
+    {
+      "title": "The Magic Seeds and the Talking Trees",
+      "prompt": "When a mysterious stranger gives Emily a handful of magic seeds, she plants them in her garden. To her surprise, the seeds grow into talking trees that have their own stories to tell."
+    },
+    {
+      "title": "The Little Robot Who Wanted to Dance",
+      "prompt": "R2D, a small robot, is not programmed to dance, but he dreams of dancing like the children at the annual robot festival. With the help of his friends, he learns how to express himself through movement and joy."
+    },
+    {
+      "title": "The Mysterious Music Box",
+      "prompt": "An old music box is passed down to young Sophie, who discovers that the box has the power to transport her into different worlds. Sophie must solve puzzles and help creatures along the way to return to her own world."
+    },
+    {
+      "title": "The Cloud Who Loved Rainbows",
+      "prompt": "Nimbus, a gentle cloud, loves to paint rainbows across the sky. One day, Nimbus is invited to a gathering of other clouds, where he learns that not all clouds create rainbows, and each cloud has a unique purpose."
+    },
+    {
+      "title": "The Little Elephant Who Forgot How to Trumpet",
+      "prompt": "Ellie, a young elephant, is embarrassed because she can’t trumpet like the other elephants. She embarks on a journey of self-discovery, learning that her unique voice is just as special."
+    },
+	{
+      "title": "The Little Robot Who Wanted to Dream",
+      "prompt": "In a world where robots follow strict instructions, a tiny robot named R1X wishes to dream like humans. With the help of a curious child, R1X embarks on an adventure to discover what dreams are and whether a robot can have them too."
+    },
+    {
+      "title": "The Lost Star and the Brave Little Owl",
+      "prompt": "One night, a small star falls from the sky and lands in the forest. A brave little owl named Oliver decides to help the star find its way back home, facing many challenges along the way."
+    },
+    {
+      "title": "The Brave Little Fish Who Swam Against the Current",
+      "prompt": "In the deep blue ocean, a little fish named Finn decides to swim upstream despite the strong current, to find a mysterious place his grandparents once told him about. Along the way, Finn discovers his true strength and makes new friends."
+    },
+    {
+      "title": "The Adventures of Tiny the Time Traveler",
+      "prompt": "Tiny, a curious mouse, discovers an ancient time machine hidden under the floorboards of an old library. Each day, she travels to a new time period, meeting strange creatures and experiencing incredible adventures."
+    },
+    {
+      "title": "The Kindness Seeds",
+      "prompt": "A magical garden grows the most beautiful flowers, but it needs the seeds of kindness to flourish. A young girl named Lily learns that kindness can grow just like a flower, and she spreads love and good deeds all around her town."
+    },
+    {
+      "title": "The Mischievous Moonbeam",
+      "prompt": "When a mischievous moonbeam falls from the sky, it causes trouble by playing pranks on the villagers below. A brave little girl named Emma and her talking cat must team up to teach the moonbeam the importance of friendship and respect."
+    },
+    {
+      "title": "The Treasure Map of the Talking Parrot",
+      "prompt": "A parrot named Percy holds a mysterious treasure map in his beak. A group of animal friends—Benny the bear, Sally the squirrel, and Timmy the turtle—embark on a wild adventure to find the treasure and learn the true value of teamwork."
+    },
+    {
+      "title": "The Enchanted Paintbrush",
+      "prompt": "Lila discovers a magical paintbrush that can bring anything she paints to life. But when a mischievous creature escapes from one of her paintings, Lila must find a way to catch it and restore balance in her world."
+    },
+    {
+      "title": "The Little Cloud Who Wanted to Float Alone",
+      "prompt": "A small cloud named Cumulus feels different because it doesn’t want to join the other clouds in the sky. It wants to float alone and experience the world. However, Cumulus soon learns that the sky is brighter when shared with friends."
+    },
+    {
+      "title": "The Rainbow and the Brave Little Frog",
+      "prompt": "After a heavy storm, a little frog named Frodo sees a beautiful rainbow in the sky. Determined to find the end of it, Frodo goes on an exciting journey with his best friend, a curious butterfly named Bella."
+    },
+    {
+      "title": "The Secret Door in the Library",
+      "prompt": "Max and his sister Emma discover a secret door hidden in the back of the library. When they step through, they are transported to a world full of talking animals and magical creatures, where they must help solve a mystery."
+    },
+    {
+      "title": "The Lion Who Couldn’t Roar",
+      "prompt": "Leo, a young lion, is worried because he can’t roar like the other lions. With the help of his animal friends, Leo learns that his true strength doesn’t come from his roar, but from his heart."
+    },
+    {
+      "title": "The Snowman Who Wanted to Dance",
+      "prompt": "A snowman named Frosty has always dreamed of dancing like the children who build him. One magical night, he comes to life and, with the help of some friendly woodland creatures, sets off to find the perfect dance."
+    },
+    {
+      "title": "The Little Cloud Who Found Her Voice",
+      "prompt": "Cumulus, a young cloud, has always been shy and afraid to speak. When she sees a powerful storm cloud named Thunder making a loud noise, she decides to find her own voice and discovers her true power along the way."
+    },
+    {
+      "title": "The Pirate Parrot's Hidden Island",
+      "prompt": "A pirate parrot named Polly leads a group of brave animal friends on a treasure hunt to find a mysterious island. They must solve riddles, avoid traps, and work together to discover the treasure."
+    },
+    {
+      "title": "The Little Dragon Who Loved to Read",
+      "prompt": "In a world where dragons are known for breathing fire, Draco, a small dragon, has a different passion—reading books. One day, he discovers a book that tells of a lost kingdom, and with the help of his friends, Draco embarks on an adventure to find it."
+    },
+    {
+      "title": "The Little Hero Who Was Afraid of the Dark",
+      "prompt": "Lily, a young girl, is afraid of the dark. One night, she is given a magical lantern by an old woman, which illuminates the dark world and shows her the beauty that can be found in the night."
+    },
+    {
+      "title": "The Brave Little Seed",
+      "prompt": "A tiny seed named Sprout has a big dream of becoming the tallest tree in the forest. Despite many challenges, including storms and animals who want to eat him, Sprout learns that with patience and perseverance, anything is possible."
+    },
+    {
+      "title": "The Wild Adventure of the Little Bumblebee",
+      "prompt": "Buzzy, a young bumblebee, sets out on an adventure to find the rarest flower in the forest. Along the way, Buzzy encounters new friends, learns about the importance of teamwork, and discovers the beauty of nature."
+    },
+    {
+      "title": "The Forest That Lost Its Colors",
+      "prompt": "In a magical forest, all the colors begin to fade away, leaving everything gray. A group of forest animals, led by a courageous rabbit named Rosie, go on a quest to restore the colors and learn the importance of caring for their home."
+    },
+    {
+      "title": "The Little Fox and the Moon's Secret",
+      "prompt": "A curious little fox named Luna wonders why the moon only shines at night. She embarks on a journey to the moon and uncovers its long-kept secret, learning valuable lessons along the way."
+    },
+    {
+      "title": "The Brave Kitten and the Lost Key",
+      "prompt": "Mittens, a small kitten, finds an ancient golden key and sets out to discover what it unlocks. With her friends, a wise owl and a playful rabbit, she uncovers an old castle full of mysteries and adventures."
+    },
+    {
+      "title": "The Magic Seeds and the Talking Trees",
+      "prompt": "When a mysterious stranger gives Emily a handful of magic seeds, she plants them in her garden. To her surprise, the seeds grow into talking trees that have their own stories to tell."
+    },
+    {
+      "title": "The Little Robot Who Wanted to Dance",
+      "prompt": "R2D, a small robot, is not programmed to dance, but he dreams of dancing like the children at the annual robot festival. With the help of his friends, he learns how to express himself through movement and joy."
+    },
+    {
+      "title": "The Mysterious Music Box",
+      "prompt": "An old music box is passed down to young Sophie, who discovers that the box has the power to transport her into different worlds. Sophie must solve puzzles and help creatures along the way to return to her own world."
+    },
+    {
+      "title": "The Cloud Who Loved Rainbows",
+      "prompt": "Nimbus, a gentle cloud, loves to paint rainbows across the sky. One day, Nimbus is invited to a gathering of other clouds, where he learns that not all clouds create rainbows, and each cloud has a unique purpose."
+    },
+    {
+      "title": "The Little Elephant Who Forgot How to Trumpet",
+      "prompt": "Ellie, a young elephant, is embarrassed because she can’t trumpet like the other elephants. She embarks on a journey of self-discovery, learning that her unique voice is just as special."
+    },
+    {
+      "title": "The Moonlit Adventure of the Little Mouse",
+      "prompt": "Milo, a little mouse, is always afraid of the dark. But one night, he sets out on a moonlit adventure to find his lost friend and discovers the wonders of the nighttime world."
+    },
+    {
+      "title": "The Lost City Under the Sea",
+      "prompt": "A group of underwater explorers, led by a brave little seahorse named Marina, discover a hidden city beneath the ocean. They embark on a thrilling adventure to uncover its mysteries and protect its ancient secrets."
+    },
+    {
+      "title": "The Little Robot Who Saved the Day",
+      "prompt": "Rico, a little robot, lives in a world where robots are built to help others. But when a great storm threatens the city, it is up to Rico to use his ingenuity and courage to save everyone."
+    },
+    {
+      "title": "The Secret of the Singing Trees",
+      "prompt": "Lilly, a curious girl, stumbles upon a forest where the trees sing beautiful melodies. She discovers that the singing trees hold the secret to a magical land, and she must protect it from those who wish to destroy it."
+    },
+    {
+      "title": "The Little Bear Who Couldn't Sleep",
+      "prompt": "Benny, a young bear, struggles to fall asleep every night. One evening, he goes on an adventure with his friends to find the Sleepy Moon, who teaches him a magical way to fall asleep peacefully."
+    },
+	{
+      "title": "The Little Giraffe Who Couldn't Reach the Leaves",
+      "prompt": "Lulu, a young giraffe, struggles to reach the leaves on the tallest trees. With the help of her animal friends, she learns to use her unique abilities in ways she never imagined."
+    },
+    {
+      "title": "The Curious Squirrel Who Wanted to Fly",
+      "prompt": "Pip, a little squirrel, dreams of flying high in the sky. One day, he meets a wise old bird who teaches him how to soar without wings."
+    },
+    {
+      "title": "The Magical Key and the Hidden Door",
+      "prompt": "A young boy named Max finds an old key in his grandmother’s attic. The key opens a secret door leading to an enchanted world full of mythical creatures and magic."
+    },
+    {
+      "title": "The Brave Little Snow Leopard",
+      "prompt": "Snow, a young snow leopard, embarks on a journey to find the legendary Ice Mountain. Along the way, she learns that bravery comes from within, even in the face of great challenges."
+    },
+    {
+      "title": "The Mysterious Island of Talking Animals",
+      "prompt": "When a storm washes her ashore, Mia discovers an island where animals can speak. She befriends a clever monkey, a wise turtle, and a brave parrot who help her find her way back home."
+    },
+    {
+      "title": "The Wishing Star and the Grumpy Dragon",
+      "prompt": "A young girl named Ellie makes a wish on a shooting star. But when a grumpy dragon steals her wish, Ellie must go on a quest to retrieve it and learn about kindness and forgiveness."
+    },
+    {
+      "title": "The Little Robot Who Found His Heart",
+      "prompt": "B-Rex, a small robot, has always been told he doesn't need a heart. But when he befriends a lonely child, B-Rex goes on a journey to find what makes him truly alive."
+    },
+    {
+      "title": "The Secret Garden and the Magical Butterfly",
+      "prompt": "A young girl named Sophie discovers a secret garden hidden behind a mysterious gate. There, she befriends a magical butterfly who teaches her how to bring life back to the forgotten garden."
+    },
+    {
+      "title": "The Moon's Lost Shine",
+      "prompt": "The moon loses its shine and turns dark, causing trouble in the sky. Luna, a young girl with a special connection to the moon, goes on a journey to help restore its glow."
+    },
+    {
+      "title": "The Brave Little Penguin Who Wanted to Fly",
+      "prompt": "Percy, a young penguin, dreams of flying like the seagulls. He goes on an exciting adventure with his friends, discovering that he doesn't need to fly to be extraordinary."
+    },
+    {
+      "title": "The Little Owl Who Couldn't Sleep",
+      "prompt": "Oliver, a small owl, has trouble sleeping at night. He seeks advice from his animal friends and discovers ways to find peace and comfort under the stars."
+    },
+    {
+      "title": "The Little Dragon Who Loved Colors",
+      "prompt": "Draco, a young dragon, loves painting with all the colors of the rainbow. When a storm washes all the colors away, Draco embarks on a journey to bring them back and restore joy to the land."
+    },
+    {
+      "title": "The Little Witch Who Couldn't Spell",
+      "prompt": "Misty, a young witch, struggles with her spells. With the help of her friends, she learns that magic comes from the heart, and a little practice can go a long way."
+    },
+    {
+      "title": "The Lion and the Tiny Mouse Who Saved His Life",
+      "prompt": "Leo, a mighty lion, is caught in a trap and thinks no one can help him. But a tiny mouse named Milo comes to his rescue, showing that even the smallest of friends can make the biggest difference."
+    },
+    {
+      "title": "The Star Who Was Afraid to Shine",
+      "prompt": "A small star named Twinkle is afraid to shine brightly. With the encouragement of her starry friends, Twinkle learns to embrace her light and shine for the world to see."
+    },
+    {
+      "title": "The Talking Teacup and the Magical Adventures",
+      "prompt": "A magical teacup comes to life and invites a curious child named Lily to embark on fantastic adventures. Together, they travel to enchanted lands and meet extraordinary creatures."
+    },
+    {
+      "title": "The Brave Little Hedgehog Who Wore a Cape",
+      "prompt": "Hugo, a tiny hedgehog, loves pretending to be a superhero. When danger strikes the forest, Hugo’s courage and resourcefulness help save the day."
+    },
+    {
+      "title": "The Lost City of Clouds",
+      "prompt": "A group of adventurous birds discovers a hidden city made entirely of clouds. As they explore this mystical place, they uncover its secrets and learn the importance of protecting nature."
+    },
+    {
+      "title": "The Magic Mirror and the Forest of Wishes",
+      "prompt": "Lena finds a magic mirror in the attic of her house. The mirror shows her a path through the Forest of Wishes, where she meets creatures who help her learn about the power of selflessness."
+    },
+    {
+      "title": "The Little Mermaid Who Wanted to Dance",
+      "prompt": "Mira, a young mermaid, dreams of dancing on land. When a magical event allows her to become human for a day, she faces new challenges and discovers the joy of dancing under the stars."
+    },
+    {
+      "title": "The Little Knight Who Saved the Day",
+      "prompt": "Sir Cedric, a small knight, may not be the strongest or the bravest, but his cleverness and quick thinking save the kingdom from an impending disaster."
+    },
+    {
+      "title": "The Brave Rabbit and the Golden Carrot",
+      "prompt": "A brave rabbit named Benny sets out to find the legendary golden carrot that can grant one wish. Along the way, he encounters many challenges and discovers the true meaning of bravery."
+    },
+    {
+      "title": "The Talking Tree Who Needed a Friend",
+      "prompt": "An old, wise tree named Willow can speak but is lonely. A little boy named Oliver befriends the tree and helps it find new friends in the forest, learning the value of friendship along the way."
+    },
+    {
+      "title": "The Little Ghost Who Loved to Laugh",
+      "prompt": "Ghostly Gus loves to make everyone laugh, but the other ghosts think he’s too silly. When a spooky problem arises, Gus uses his sense of humor to save the day and change the ghosts’ perspective."
+    },
+    {
+      "title": "The Magical Painting and the Lost Kingdom",
+      "prompt": "A magical painting transports young Ella to a lost kingdom, where she must help its rulers restore peace by solving riddles and unlocking the secrets hidden within the artwork."
+    },
+    {
+      "title": "The Brave Little Spider Who Wanted to Dance",
+      "prompt": "Sophie the spider wants to dance, but her webs keep getting in the way. With the help of her insect friends, she learns how to turn her webs into a beautiful dance and embraces her uniqueness."
+    },
+    {
+      "title": "The Little Elephant Who Loved to Paint",
+      "prompt": "Ellie, a young elephant, discovers a love for painting but struggles to find a canvas big enough for her artistic dreams. She uses her creativity to find a new way to showcase her art for the world to enjoy."
+    },
+    {
+      "title": "The Midnight Adventure of the Little Fox",
+      "prompt": "At midnight, Lily, a curious little fox, sets out on an adventure under the moonlight. She discovers magical creatures and learns important lessons about courage, kindness, and discovery."
+    },
+    {
+      "title": "The Little Robot and the Music Box",
+      "prompt": "A small robot named Chip finds an old music box that brings everything it touches to life. He learns the power of music and how it can change the world around him."
+    },
+    {
+      "title": "The Enchanted Ship and the Lost Treasure",
+      "prompt": "A young girl named Isla discovers a hidden treasure map that leads to an enchanted ship. She sails with new friends across mystical seas and uncovers a treasure far more valuable than gold."
+    },
+    {
+      "title": "The Wild Adventure of the Tiny Dragon",
+      "prompt": "A tiny dragon named Blaze embarks on an adventure to prove that he’s just as brave as the biggest dragons in the kingdom. Along the way, Blaze discovers that courage isn’t about size, but heart."
+    },
+    {
+      "title": "The Little Penguin Who Found a Friend",
+      "prompt": "Pip, a lonely penguin, wishes for a friend who will understand him. When he meets a wandering seal, they form an unexpected bond and embark on exciting adventures together."
+    },
+    {
+      "title": "The Flying Turtle Who Saved the Kingdom",
+      "prompt": "A wise old turtle named Theo gains the ability to fly through a magical spell. He becomes the kingdom’s hero when he uses his new gift to rescue the kingdom from an evil sorcerer."
+    },
+    {
+      "title": "The Dreaming Tree and the Lost Wish",
+      "prompt": "A mystical tree in the forest holds the power to grant wishes, but when a wish is lost, a brave child named Mia goes on an adventure to retrieve it and save the magical tree."
+    }
+	
+  ]
+}
