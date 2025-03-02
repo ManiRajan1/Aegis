@@ -12,4 +12,4 @@ todays_prompt = prompts[0]
 # Generate the script for video
 script = generate_script.openAI_API(prompt=todays_prompt["prompt"])
 
-generate_voice.ElevenLabs(script)
+generate_voice.ElLabs(script)
