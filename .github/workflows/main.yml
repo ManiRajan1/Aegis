@@ -10,7 +10,7 @@ on:
     inputs:
       prompt_index:
         description: 'Override the prompt index (leave empty to use chronological order)'
-        required: false
+        required: true
         type: string
 
 jobs:
