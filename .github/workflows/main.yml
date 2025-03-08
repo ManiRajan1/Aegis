@@ -1,13 +1,17 @@
 name: Video_content_generation
 
 on:
-  #schedule:
+  schedule:
     # Run daily at 12:00 UTC
-    #- cron: '0 12 * * *'
+    - cron: '0 12 * * *'
   
   # Allow manual triggering
   workflow_dispatch:
     inputs:
+      branch:
+        description: 'Select the branch to run the workflow'
+        required: true
+        default: 'main'
       prompt_index:
         description: 'Override the prompt index (leave empty to use chronological order)'
         required: true
@@ -20,6 +24,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch }}
       
       - name: Set up Python
         uses: actions/setup-python@v4
