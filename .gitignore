@@ -1,4 +1,45 @@
-__pycache__
+# Environment variables
 .env
-.ssh
-generated_files
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+
+# Output files
+output/
+
+# API keys and credentials
+credentials.json
+client_secrets.json
+token.json
+
+# Media files
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+
+# Temporary files
+temp/
+.temp/
+tmp/
+.tmp/
