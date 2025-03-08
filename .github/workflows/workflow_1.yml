@@ -65,7 +65,7 @@ jobs:
           python ../../src/video_content_creator/main_orchestration.py --from-prompt-file ../../data/prompts.json --prompt-index ${{ env.PROMPT_INDEX }}
       
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generated-content
           path: output/
