@@ -144,4 +144,124 @@ def add_subtitles(video_path, script_path, output_path=None):
             script_content = f.read()
         
         # Create a very simple SRT file (in a real app, you'd use proper timing)
-        with open(srt
+        with open(srt_path, 'w', encoding='utf-8') as f:
+            lines = script_content.strip().split('\n')
+            duration = get_media_duration(video_path)
+            time_per_line = duration / len(lines)
+            
+            for i, line in enumerate(lines):
+                if not line.strip():  # Skip empty lines
+                    continue
+                    
+                start_time = i * time_per_line
+                end_time = (i + 1) * time_per_line
+                
+                # Format times as HH:MM:SS,mmm
+                start_formatted = format_srt_time(start_time)
+                end_formatted = format_srt_time(end_time)
+                
+                # Write SRT entry
+                f.write(f"{i+1}\n")
+                f.write(f"{start_formatted} --> {end_formatted}\n")
+                f.write(f"{line.strip()}\n\n")
+        
+        # Add subtitles to video
+        ffmpeg_cmd = [
+            'ffmpeg',
+            '-y',
+            '-i', video_path,
+            '-vf', f"subtitles='{srt_path}'",
+            '-c:a', 'copy',
+            output_path
+        ]
+        
+        subprocess.run(ffmpeg_cmd, check=True, capture_output=True)
+        logger.info(f"Video with subtitles created at {output_path}")
+        
+        # Clean up SRT file
+        os.remove(srt_path)
+        
+        return output_path
+        
+    except subprocess.CalledProcessError as e:
+        logger.error(f"ffmpeg error: {e.stderr.decode() if e.stderr else str(e)}")
+        raise
+    except Exception as e:
+        logger.error(f"Error adding subtitles: {str(e)}")
+        raise
+
+def format_srt_time(seconds):
+    """
+    Format time in seconds to SRT time format (HH:MM:SS,mmm).
+    
+    Args:
+        seconds (float): Time in seconds
+        
+    Returns:
+        str: Formatted time string
+    """
+    hours = int(seconds / 3600)
+    minutes = int((seconds % 3600) / 60)
+    seconds = seconds % 60
+    milliseconds = int((seconds - int(seconds)) * 1000)
+    
+    return f"{hours:02d}:{minutes:02d}:{int(seconds):02d},{milliseconds:03d}"
+
+def trim_video(video_path, output_path=None, start_time=0, duration=None):
+    """
+    Trim a video to a specific duration.
+    
+    Args:
+        video_path (str): Path to the input video
+        output_path (str, optional): Path for the trimmed video
+        start_time (float): Start time in seconds
+        duration (float, optional): Duration in seconds
+        
+    Returns:
+        str: Path to the trimmed video
+    """
+    if not output_path:
+        filename = os.path.splitext(os.path.basename(video_path))[0]
+        output_path = os.path.join(os.path.dirname(video_path), f"{filename}_trimmed.mp4")
+    
+    try:
+        ffmpeg_cmd = ['ffmpeg', '-y', '-i', video_path]
+        
+        # Add start time if specified
+        if start_time > 0:
+            ffmpeg_cmd.extend(['-ss', str(start_time)])
+        
+        # Add duration if specified
+        if duration:
+            ffmpeg_cmd.extend(['-t', str(duration)])
+        
+        # Output options
+        ffmpeg_cmd.extend([
+            '-c:v', 'copy',
+            '-c:a', 'copy',
+            output_path
+        ])
+        
+        subprocess.run(ffmpeg_cmd, check=True, capture_output=True)
+        logger.info(f"Trimmed video created at {output_path}")
+        
+        return output_path
+        
+    except subprocess.CalledProcessError as e:
+        logger.error(f"ffmpeg error: {e.stderr.decode() if e.stderr else str(e)}")
+        raise
+    except Exception as e:
+        logger.error(f"Error trimming video: {str(e)}")
+        raise
+
+if __name__ == "__main__":
+    # Example usage
+    logging.basicConfig(level=logging.INFO)
+    
+    # Test combining audio and video
+    video_file = "path/to/video.mp4"
+    audio_file = "path/to/audio.mp3"
+    
+    if os.path.exists(video_file) and os.path.exists(audio_file):
+        combined_video = combine_audio_video(video_file, audio_file)
+        print(f"Combined video created at: {combined_video}")
