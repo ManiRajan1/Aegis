@@ -1,9 +1,9 @@
 name: Video_content_generation
 
 on:
-  schedule:
+  #schedule:
     # Run daily at 12:00 UTC
-    - cron: '0 12 * * *'
+    #- cron: '0 12 * * *'
   
   # Allow manual triggering
   workflow_dispatch:
