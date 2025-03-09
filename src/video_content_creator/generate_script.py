@@ -52,7 +52,7 @@ def generate_content_script(topic, style='educational', length='medium', output_
     try:
         # Call the OpenAI API
         response = openai.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are an expert content creator who specializes in creating engaging scripts."},
                 {"role": "user", "content": prompt}
