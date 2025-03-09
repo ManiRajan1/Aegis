@@ -8,6 +8,7 @@ import time
 import json
 import requests
 import logging
+import base64
 from pathlib import Path
 import subprocess
 from generate_script import extract_scenes_from_script
