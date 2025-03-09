@@ -62,7 +62,7 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           STABILITY_API_KEY: ${{ secrets.STABILITY_API_KEY }}
         run: |
-          python ../../src/video_content_creator/main_orchestration.py --from-prompt-file ../../data/prompts.json --prompt-index ${{ env.PROMPT_INDEX }}
+          python src/video_content_creator/main_orchestration.py --from-prompt-file data/prompts.json --prompt-index ${{ env.PROMPT_INDEX }}
       
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
